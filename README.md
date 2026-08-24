@@ -4,8 +4,8 @@
 
 当前 Windows 产物位于 `release`：
 
-- `Niulai-Pet-0.2.0-x64-Setup.exe`：标准 Windows 用户级安装包
-- `Niulai-Pet-0.2.0-x64-Portable.exe`：免安装便携版
+- `Niulai-Pet-0.2.1-x64-Setup.exe`：标准 Windows 用户级安装包
+- `Niulai-Pet-0.2.1-x64-Portable.exe`：免安装便携版
 
 角色和面板沿用项目中已验证的成熟版本，未在最终打包阶段替换素材。
 
@@ -35,7 +35,7 @@ npm run preview
 正式版本使用 `electron-builder` 生成 NSIS 安装包和便携版，应用启用 `electron-updater`。GitHub Releases 是默认发布源，仓库配置为 `shufen404/-`；每次发布必须同步更新 `package.json` 版本号、Release tag 和 `latest.yml`。安装版会按用户安装到本地用户目录，不要求管理员权限。
 
 公开下载页：https://github.com/shufen404/-/releases/latest
-推荐单一入口：https://github.com/shufen404/-/releases/download/v0.2.0/Niulai-Pet-0.2.0-x64-Installer.zip
+推荐单一入口：https://github.com/shufen404/-/releases/download/v0.2.1/Niulai-Pet-0.2.1-x64-Installer.zip
 
 本地构建：
 

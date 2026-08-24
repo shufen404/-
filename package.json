@@ -1,6 +1,6 @@
 {
   "name": "niulai-desktop-pet",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "牛来桌宠",
   "description": "牛来桌宠：带计薪面板、工作模式和摸鱼工具的 Windows 桌面宠物",
   "main": "src/main.js",
