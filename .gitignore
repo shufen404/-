@@ -13,4 +13,5 @@ asar-probe-*/
 enter-fix-stage/
 pack-app-*/
 release-*/
+release-download/
 build/
