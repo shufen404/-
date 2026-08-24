@@ -23,7 +23,14 @@ const INLINE_ATTACH_OVERLAP = 0;
 const BUILTIN_APPEARANCES = [
   { id: 'niulai', name: '牛来', src: '../assets/niulai-static.png', speakingSrc: '../assets/niulai-speaking.png', fallbackSrc: '../assets/niulai-static.png' },
   { id: 'cow', name: '小牛', src: '../assets/cow-cutout.png', speakingSrc: '../assets/cow-cutout.png', fallbackSrc: '../assets/cow-cutout.png' },
-  { id: 'historical-cow', name: '森林小牛', src: '../assets/niulai-historical-cow.png', speakingSrc: '../assets/niulai-historical-cow.png', fallbackSrc: '../assets/niulai-historical-cow.png' }
+  { id: 'historical-cow', name: '森林小牛', src: '../assets/niulai-historical-cow.png', speakingSrc: '../assets/niulai-historical-cow.png', fallbackSrc: '../assets/niulai-historical-cow.png' },
+  { id: 'folder-cow-01', name: '牛来·沉思', src: '../assets/appearances/cow-variant-01.png', speakingSrc: '../assets/appearances/cow-variant-01.png', fallbackSrc: '../assets/appearances/cow-variant-01.png' },
+  { id: 'folder-cow-02', name: '牛来·森林', src: '../assets/appearances/cow-variant-02.png', speakingSrc: '../assets/appearances/cow-variant-02.png', fallbackSrc: '../assets/appearances/cow-variant-02.png' },
+  { id: 'folder-cow-03', name: '牛来·侧脸', src: '../assets/appearances/cow-variant-03.jpg', speakingSrc: '../assets/appearances/cow-variant-03.jpg', fallbackSrc: '../assets/appearances/cow-variant-03.jpg' },
+  { id: 'folder-cow-04', name: '牛来·大角', src: '../assets/appearances/cow-variant-04.png', speakingSrc: '../assets/appearances/cow-variant-04.png', fallbackSrc: '../assets/appearances/cow-variant-04.png' },
+  { id: 'folder-cow-05', name: '牛来·飞行', src: '../assets/appearances/cow-variant-05.png', speakingSrc: '../assets/appearances/cow-variant-05.png', fallbackSrc: '../assets/appearances/cow-variant-05.png' },
+  { id: 'folder-cow-06', name: '牛来·蓝天', src: '../assets/appearances/cow-variant-06.png', speakingSrc: '../assets/appearances/cow-variant-06.png', fallbackSrc: '../assets/appearances/cow-variant-06.png' },
+  { id: 'folder-cow-07', name: '牛来·原版', src: '../assets/appearances/cow-variant-07.png', speakingSrc: '../assets/appearances/cow-variant-07.png', fallbackSrc: '../assets/appearances/cow-variant-07.png' }
 ];
 const DIRECTOR_TASKS = [
   '确认今日选题与核心受众',
