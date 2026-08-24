@@ -1,0 +1,27 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>薪宠</title><link rel="stylesheet" href="pet.css"><link rel="stylesheet" href="interaction.css"></head><body>
+<main class="pet-root" id="petRoot">
+  <div class="drag-zone" id="dragZone" title="拖动桌宠"></div>
+  <div class="coin-layer" id="coinLayer" aria-hidden="true"></div>
+  <div class="boss-line" id="bossLine">感谢老板</div>
+  <div class="pet-hitbox" id="petButton" role="button" tabindex="0" aria-label="播放牛来语音，下一段：哞">
+    <img id="petAnimation" src="../assets/niulai-static.png" alt="牛来桌宠" draggable="false">
+    <img id="petSpeaking" src="../assets/niulai-speaking.png" alt="张嘴说话中的牛来桌宠" draggable="false">
+    <img id="petFallback" src="../assets/niulai-static.png" alt="牛来桌宠" draggable="false">
+  </div>
+  <div class="status-card" id="statusCard">
+    <div class="status-line"><span class="status-dot"></span><span id="statusText">还没开始摸鱼</span></div>
+    <strong id="mainValue">¥0.00</strong>
+    <span id="subValue">点击小猫开始</span>
+    <div class="panel-actions">
+      <button id="startBtn" title="开始 / 暂停"><span id="startIcon">▶</span><small id="startText">开始</small></button>
+      <button id="workBtn" title="工作模式"><span>⌨</span><small>工作</small></button>
+      <button id="toolsBtn" title="工具"><span>▣</span><small>工具</small></button>
+      <button id="settingsBtn" title="设置"><span>⚙</span><small>设置</small></button>
+    </div>
+    <div class="work-message">加油上班。</div>
+    <div class="work-tasks" id="workTasks" aria-label="今日编导任务"></div>
+    <div class="inline-panel-host" id="inlinePanelHost" aria-hidden="true"></div>
+    <button class="appearance-button" id="appearanceButton" title="更换桌宠形象" aria-label="更换桌宠形象">✦</button>
+  </div>
+  <div class="toast" id="toast"></div>
+</main><script src="renderer.js"></script></body></html>
