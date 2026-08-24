@@ -1,0 +1,16 @@
+node_modules/
+release/win-unpacked/
+release/*.yml
+release/*.blockmap
+release/*.exe
+release/*.zip
+salary-pet-state.json
+debug.log
+updates.log
+_discarded-versions-*/
+.final-stage-*/
+asar-probe-*/
+enter-fix-stage/
+pack-app-*/
+release-*/
+build/

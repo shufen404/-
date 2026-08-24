@@ -1,0 +1,72 @@
+{
+  "name": "niulai-desktop-pet",
+  "version": "0.2.0",
+  "author": "牛来桌宠",
+  "description": "牛来桌宠：带计薪面板、工作模式和摸鱼工具的 Windows 桌面宠物",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "preview": "npm run check && electron . --preview",
+    "check": "node --check src/main.js && node --check src/preload.js && node --check src/renderer.js && node --check src/panel.js && node --check src/document-parser.js",
+    "dist": "npm run check && node tools/build-release.js",
+    "dist:portable": "npm run check && node tools/build-release.js --portable-only"
+  },
+  "devDependencies": {
+    "@electron/packager": "^18.4.4",
+    "electron": "43.4.1",
+    "electron-builder": "^26.15.3"
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "electron-updater": "^6.6.2",
+    "mammoth": "^1.12.1",
+    "pdfjs-dist": "^6.2.108",
+    "word-extractor": "^1.0.4"
+  },
+  "build": {
+    "appId": "com.niulai.desktop.pet",
+    "productName": "牛来桌宠",
+    "executableName": "牛来桌宠",
+    "artifactName": "Niulai-Pet-${version}-${arch}.${ext}",
+    "directories": {
+      "output": "release"
+    },
+    "asar": true,
+    "npmRebuild": false,
+    "buildDependenciesFromSource": false,
+    "publish": {
+      "provider": "github",
+      "owner": "shufen404",
+      "repo": "-",
+      "releaseType": "release",
+      "channel": "latest"
+    },
+    "files": [
+      "src/**/*",
+      "assets/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "requestedExecutionLevel": "asInvoker"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": false,
+      "allowToChangeInstallationDirectory": true,
+      "deleteAppDataOnUninstall": false,
+      "runAfterFinish": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "牛来桌宠",
+      "artifactName": "Niulai-Pet-${version}-${arch}-Setup.${ext}"
+    },
+    "portable": {
+      "artifactName": "Niulai-Pet-${version}-${arch}-Portable.${ext}"
+    }
+  }
+}
